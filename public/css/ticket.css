@@ -1,0 +1,84 @@
+/* =========================================
+   TICKET.CSS — Página de confirmación de pedido
+   ========================================= */
+
+.ticket-cabecera {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.ticket-icono {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ticket-cabecera h1 {
+    color: #0f1111;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    text-shadow: none;
+}
+
+.ticket-subtitulo {
+    color: #565959;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Tabla de info del pedido */
+.ticket-info {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-info-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    gap: 10px;
+}
+
+.ticket-label {
+    color: #565959;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.ticket-valor {
+    color: #0f1111;
+    text-align: right;
+}
+
+.ticket-id {
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e4d2b;
+}
+
+.ticket-estado {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.ticket-titulo-lineas {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f1111;
+    margin: 0 0 4px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}

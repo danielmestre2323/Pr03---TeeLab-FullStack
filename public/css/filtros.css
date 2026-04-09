@@ -1,0 +1,66 @@
+/* =========================================
+   FILTROS.CSS — Barra de filtros del catálogo
+   ========================================= */
+
+.filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 16px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.filtro-input {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    min-width: 240px;
+    flex: 1;
+    background-color: white;
+    color: #333;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.filtro-input:focus {
+    box-shadow: 0 0 0 2px #ff6b35;
+}
+
+.filtro-select {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.filtro-select:focus {
+    box-shadow: 0 0 0 2px #ff6b35;
+}
+
+.btn-limpiar {
+    padding: 10px 18px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-limpiar:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-color: white;
+}

@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/filtros.css">
     <link rel="stylesheet" href="../public/css/productos.css">
     <script src="../public/js/productos.js" defer></script>
     <title>TeeLab</title>
 </head>
 <body>
-    <h1>TeeLab - Tu tienda de camisetas </h1>
+    <header class="main-header">
+        <div class="logo">
+            <a href="productos.html">TeeLab</a>
+        </div>
+        <nav class="nav-links">
+            <a href="carrito.html" class="cart-icon" aria-label="Ver carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <!-- FILTROS -->
+    <div class="filtros-container">
+        <input
+            type="text"
+            id="filtro-texto"
+            class="filtro-input"
+            placeholder="Buscar por nombre o descripción..."
+        >
+        <select id="filtro-talla" class="filtro-select">
+            <option value="">Todas las tallas</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <select id="filtro-color" class="filtro-select">
+            <option value="">Todos los colores</option>
+            <option value="blanco">Blanco</option>
+            <option value="negro">Negro</option>
+            <option value="gris">Gris</option>
+            <option value="azul">Azul</option>
+            <option value="mostaza">Mostaza</option>
+        </select>
+        <select id="filtro-sort" class="filtro-select">
+            <option value="">Sin ordenar</option>
+            <option value="precio_asc">Precio: menor a mayor</option>
+            <option value="precio_desc">Precio: mayor a menor</option>
+            <option value="nombre_asc">Nombre: A-Z</option>
+            <option value="nombre_desc">Nombre: Z-A</option>
+        </select>
+        <button id="btn-limpiar-filtros" class="btn-limpiar">Limpiar filtros</button>
+    </div>
+
     <section class="container"></section>
 </body>
 </html>
